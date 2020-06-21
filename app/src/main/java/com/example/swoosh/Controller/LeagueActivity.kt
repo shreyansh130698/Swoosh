@@ -15,7 +15,7 @@ class LeagueActivity : BaseActivity() {
     //var selectedLeague = ""
     var player = Player("","")
 
-    override fun onSaveInstanceState(outState: Bundle) {
+    override fun onSaveInstanceState(outState: Bundle) {                 //if the user rotates the screen on this page, instance (activity) will be restored to default(blank)
         super.onSaveInstanceState(outState)
         outState?.putParcelable(EXTRA_PLAYER,player)
     }
